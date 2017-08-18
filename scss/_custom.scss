@@ -95,7 +95,7 @@ header {
     .demo-btn {
       background: $blue-bg;
       color: white;
-      margin-left: 15px;
+      margin-left: 10px;
     }
 
 
@@ -105,7 +105,7 @@ header {
 
 .banner {
   position: relative;
-  height: 650px;
+  height: 670px;
   width: 100%;
   background-image: url(../img/banner-pattern.png);
   background: rgba(26,41,62,.9), url(../img/banner-pattern.png) ;
@@ -274,9 +274,40 @@ header {
 .testimonials {
   position: relative;
   margin-top: 100px;
-  height: 468px;
+  min-height: 468px;
   width: 100%;
   background: #223141; //Fallback
   background: url(../img/testimonials-bg.png);
+  background-size: cover;
   background-repeat: no-repeat, no-repeat;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  p {
+    font-size: 1.4em;
+    width: 80%;
+    display: block;
+    margin: auto;
+    line-height: 38px;
+    color: rgba(255,255,255,.7);
+  }
+
+  .avatar {
+    img {
+      margin-top: 50px;
+    }
+    h4 {
+      color: $green-title-color;
+      text-align: center;
+      font-size: 1.2em;
+      margin-top: 20px;
+    }
+    h5 {
+      text-align: center;
+      font-size: 1em;
+      margin-top: 10px;
+      color: rgba(255,255,255, .6);
+    }
+  }
+
 }

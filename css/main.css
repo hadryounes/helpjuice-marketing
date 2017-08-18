@@ -1037,11 +1037,11 @@ header {
     header .header-ctas .demo-btn {
       background: #52A7F8;
       color: white;
-      margin-left: 15px; }
+      margin-left: 10px; }
 
 .banner {
   position: relative;
-  height: 650px;
+  height: 670px;
   width: 100%;
   background-image: url(../img/banner-pattern.png);
   background: rgba(26, 41, 62, 0.9), url(../img/banner-pattern.png);
@@ -1166,10 +1166,32 @@ header {
 .testimonials {
   position: relative;
   margin-top: 100px;
-  height: 468px;
+  min-height: 468px;
   width: 100%;
   background: #223141;
   background: url(../img/testimonials-bg.png);
-  background-repeat: no-repeat, no-repeat; }
+  background-size: cover;
+  background-repeat: no-repeat, no-repeat;
+  padding-top: 80px;
+  padding-bottom: 80px; }
+  .testimonials p {
+    font-size: 1.4em;
+    width: 80%;
+    display: block;
+    margin: auto;
+    line-height: 38px;
+    color: rgba(255, 255, 255, 0.7); }
+  .testimonials .avatar img {
+    margin-top: 50px; }
+  .testimonials .avatar h4 {
+    color: #20D291;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px; }
+  .testimonials .avatar h5 {
+    text-align: center;
+    font-size: 1em;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.6); }
 
 /*# sourceMappingURL=main.css.map */
