@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @-ms-viewport {
   width: device-width; }
 html {
@@ -1001,6 +1002,24 @@ hr {
   margin: 100px auto 80px;
   border-color: #cbd6e1; }
 
+::-webkit-input-placeholder {
+  /* Chrome */
+  color: #374C61; }
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #374C61; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #374C61;
+  opacity: 1; }
+
+:-moz-placeholder {
+  /* Firefox 4 - 18 */
+  color: #374C61;
+  opacity: 1; }
+
 header {
   position: fixed;
   height: 80px;
@@ -1233,15 +1252,29 @@ footer {
     width: 100%;
     background: transparent;
     height: 300px;
-    padding-top: 100px; }
+    padding-top: 70px; }
     footer .footer ul {
       padding: 0;
-      list-style: none; }
+      list-style: none;
+      padding-top: 30px; }
       footer .footer ul li {
         font-size: .875em;
         padding-bottom: 16px; }
         footer .footer ul li a {
           color: #c6c8ca; }
+  footer h5 {
+    text-align: left;
+    color: #c6c8ca;
+    font-size: 1.1em;
+    margin-top: 30px; }
+  footer p {
+    font-size: .75em;
+    color: #c6c8ca;
+    text-align: left;
+    opacity: .7;
+    line-height: 18px; }
+    footer p a {
+      color: #c6c8ca; }
   footer .copyright {
     position: relative;
     height: 80px;
@@ -1250,5 +1283,18 @@ footer {
     color: #c6c8ca;
     background: #18263a;
     font-size: .875em; }
+    footer .copyright .email:before {
+      background: url(https://static.helpjuice.com/assets/marketing/icons/footer-email@2x-8593b25….png) center center no-repeat;
+      background-size: 16px auto;
+      width: 16px;
+      height: 12px;
+      top: calc(50% - 6px); }
+    footer .copyright .phone:before {
+      background: url(https://static.helpjuice.com/assets/marketing/icons/footer-phone@2x-53e8e34….png) center center no-repeat;
+      background-size: 12px auto;
+      width: 12px;
+      height: 16px;
+      top: calc(50% - 8px);
+      left: 5px; }
 
 /*# sourceMappingURL=main.css.map */
