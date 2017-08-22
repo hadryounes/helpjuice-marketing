@@ -4,7 +4,7 @@
 
 body {
   background: #FBFCFD;
-  padding-bottom: 200px;
+  //padding-bottom: 200px;
 }
 
 .centred {
@@ -59,7 +59,6 @@ header {
 
   .nav {
     .nav-item {
-
       padding: 29px 1rem 0 1rem;
 
       a.nav-link {
@@ -101,7 +100,6 @@ header {
 
   }
 }
-
 
 .banner {
   position: relative;
@@ -319,4 +317,61 @@ header {
     }
   }
 
+}
+
+
+.join-us {
+    position: relative;
+    //height: auto;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    margin-bottom: 40px;
+    margin-top: 60px;
+    min-height: 420px;
+    width: 100%;
+    background: url(../img/map.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    //background-size: cover;
+
+    .join-us-form {
+      input {
+        border-radius: 100px 0px 0px 100px;
+        border: 1px;
+        border-right: 0px;
+        border-style: solid;
+        border-color: rgba(103, 124, 145, .36);
+        padding: .8em 1.6em;
+        min-width: 300px;
+      }
+      button {
+        border-radius: 0 100px 100px 0;
+        background: $blue-bg;
+        border: 1px solid $blue-bg;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding: .8em 1.6em;
+        text-transform: uppercase;
+      }
+
+    }
+}
+
+footer {
+  position: relative;
+  //min-height: 300px;
+  background: #1a293e;
+
+  .footer {
+    position: relative;
+    width: 100%;
+    background: transparent;
+    height: 300px;
+  }
+  .copyright {
+    position: relative;
+    height: 80px;
+    width: 100%;
+    background: #18263a;
+  }
 }
