@@ -367,11 +367,26 @@ footer {
     width: 100%;
     background: transparent;
     height: 300px;
+    padding-top: 100px;
+    ul {
+      padding: 0;
+      list-style: none;
+      li {
+        font-size: .875em;
+        padding-bottom: 16px;
+        a {
+          color: #c6c8ca;
+        }
+      }
+    }
   }
   .copyright {
     position: relative;
     height: 80px;
     width: 100%;
+    padding-top: 30px;
+    color: #c6c8ca;
     background: #18263a;
+    font-size: .875em;
   }
 }

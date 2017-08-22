@@ -1232,11 +1232,23 @@ footer {
     position: relative;
     width: 100%;
     background: transparent;
-    height: 300px; }
+    height: 300px;
+    padding-top: 100px; }
+    footer .footer ul {
+      padding: 0;
+      list-style: none; }
+      footer .footer ul li {
+        font-size: .875em;
+        padding-bottom: 16px; }
+        footer .footer ul li a {
+          color: #c6c8ca; }
   footer .copyright {
     position: relative;
     height: 80px;
     width: 100%;
-    background: #18263a; }
+    padding-top: 30px;
+    color: #c6c8ca;
+    background: #18263a;
+    font-size: .875em; }
 
 /*# sourceMappingURL=main.css.map */
