@@ -1174,11 +1174,15 @@ header {
   background-repeat: no-repeat, no-repeat;
   padding-top: 80px;
   padding-bottom: 80px; }
+  .testimonials .testimonial-text {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+    background: url(../img/start-quote.png) top right no-repeat, url(../img/end-quote.png) bottom left no-repeat; }
   .testimonials p {
     font-size: 1.4em;
-    width: 80%;
-    display: block;
-    margin: auto;
+    padding-bottom: 20px;
     line-height: 38px;
     color: rgba(255, 255, 255, 0.7); }
   .testimonials .avatar img {

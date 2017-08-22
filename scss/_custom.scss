@@ -283,13 +283,22 @@ header {
   padding-top: 80px;
   padding-bottom: 80px;
 
+  .testimonial-text {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+    background: url(../img/start-quote.png) top right no-repeat,  url(../img/end-quote.png)  bottom left no-repeat;
+  }
   p {
     font-size: 1.4em;
-    width: 80%;
-    display: block;
-    margin: auto;
+    //width: 80%;
+    //display: block;
+    //margin: auto;
+    padding-bottom: 20px;
     line-height: 38px;
     color: rgba(255,255,255,.7);
+
   }
 
   .avatar {
