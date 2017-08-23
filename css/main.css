@@ -982,27 +982,35 @@ h2 {
   letter-spacing: 0.48px;
   font-size: 1.6em;
   line-height: 32px;
-  margin-top: 10px; }
+  margin-top: 10px;
+  font-family: "proxima-nova", helvetica, arial, sans-serif;
+  font-weight: 600;
+  font-style: normal; }
 
 h3 {
   text-align: center;
   color: #20D291;
   text-transform: uppercase;
   font-size: 1em;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  font-family: "proxima-nova", helvetica, arial, sans-serif;
+  font-weight: 700;
+  font-style: normal; }
 
 p {
   font-size: 1em;
   text-align: center;
   color: #677C91;
   margin-top: 20px;
-  margin-bottom: 60px;
   line-height: 28px; }
 
 hr {
-  margin: 100px auto 80px;
+  margin: 80px auto 100px;
   border-color: #cbd6e1; }
 
+@media (max-width: 767px) {
+  hr {
+    margin: 60px auto 60px; } }
 ::-webkit-input-placeholder {
   /* Chrome */
   color: #374C61; }
@@ -1119,7 +1127,10 @@ header {
     color: white;
     text-align: center;
     margin-top: 30px;
-    letter-spacing: 0.93px; }
+    letter-spacing: 0.93px;
+    font-weight: 700;
+    font-style: normal;
+    font-family: "proxima-nova", helvetica, arial, sans-serif; }
   .banner .color-green {
     color: #20D291; }
   .banner p {
@@ -1127,7 +1138,8 @@ header {
     line-height: 30px;
     color: rgba(255, 255, 255, 0.9);
     text-align: center;
-    margin-top: 20px; }
+    margin-top: 20px;
+    font-weight: 300; }
   .banner .getstarted-btn {
     background: #52A7F8;
     color: white;
@@ -1141,7 +1153,7 @@ header {
 
 .app-screenshot {
   position: relative;
-  height: 500px;
+  max-height: 500px;
   width: 100%;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 3px;
@@ -1152,6 +1164,16 @@ header {
     width: 100%;
     box-shadow: 0 1px 10px 0px rgba(0, 0, 0, 0.05); }
 
+@media (max-width: 767px) {
+  .app-screenshot {
+    margin-top: -210px; }
+
+  .banner h1 {
+    margin-top: 0;
+    line-height: 48px; } }
+@media (max-width: 575px) {
+  .app-screenshot {
+    margin-top: -164px; } }
 .what-is-helpjuice {
   position: relative;
   width: 100%;
@@ -1176,7 +1198,8 @@ header {
     font-size: 28px;
     margin-top: 20px;
     color: #4B5E71;
-    text-align: center; }
+    text-align: center;
+    font-weight: 600; }
   .what-is-helpjuice h5 {
     font-size: 0.875em;
     color: #677C91;
@@ -1196,6 +1219,7 @@ header {
       text-align: center; }
     .what-is-helpjuice .about-feature p {
       margin-top: 25px;
+      margin-bottom: 10px !important;
       text-align: center; }
   .what-is-helpjuice .vertical-separator {
     display: block;
@@ -1203,23 +1227,43 @@ header {
     height: 410px;
     margin: auto;
     background: #cbd6e1; }
-  .what-is-helpjuice .on-premise h5 {
-    font-size: 1.2em;
-    margin: 30px auto;
-    text-align: center; }
-  .what-is-helpjuice .on-premise p {
-    margin-bottom: 30px; }
-  .what-is-helpjuice .on-premise .more-btn {
-    padding: .8em 1.6em;
-    border-radius: 10em;
-    font-size: 0.875em;
-    background: #52A7F8;
-    color: white;
-    margin-left: 15px;
-    display: block;
-    margin: auto;
-    width: 160px; }
+  @media (max-width: 767px) {
+    .what-is-helpjuice .hidden-sm-down {
+      display: none; }
+    .what-is-helpjuice .our-clients .our-clients-img {
+      width: 100%; } }
+  .what-is-helpjuice .navbar-toggler-icon {
+    width: 1em !important;
+    height: 1em; }
+  .what-is-helpjuice .on-premise {
+    margin-top: 40px; }
+    .what-is-helpjuice .on-premise h5 {
+      font-size: 1.2em;
+      margin: 30px auto;
+      text-align: center;
+      font-weight: 600; }
+    .what-is-helpjuice .on-premise p {
+      margin-bottom: 30px; }
+    .what-is-helpjuice .on-premise .more-btn {
+      padding: .8em 1.6em;
+      border-radius: 10em;
+      font-size: 0.875em;
+      background: #52A7F8;
+      color: white;
+      margin-left: 15px;
+      display: block;
+      margin: auto;
+      width: 160px; }
 
+@media (max-width: 767px) {
+  .what-is-helpjuice {
+    margin-top: 80px; }
+    .what-is-helpjuice .center-illustration {
+      display: none; }
+    .what-is-helpjuice .circular-illustraion {
+      margin: 30px auto; }
+    .what-is-helpjuice .about-feature {
+      margin-top: 60px; } }
 .our-clients .our-clients-img {
   margin: 10px auto 0px;
   width: 80%; }
@@ -1259,6 +1303,9 @@ header {
     margin-top: 10px;
     color: rgba(255, 255, 255, 0.6); }
 
+@media (max-width: 767px) {
+  .testimonials {
+    margin-top: 60px; } }
 .join-us {
   position: relative;
   padding-top: 80px;
@@ -1287,6 +1334,19 @@ header {
     padding: .8em 1.6em;
     text-transform: uppercase; }
 
+@media (max-width: 767px) {
+  .join-us {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    min-height: 420px; }
+    .join-us .join-us-form {
+      margin-top: 30px; }
+      .join-us .join-us-form input, .join-us .join-us-form button {
+        border-radius: 100px;
+        min-width: 360px; } }
 footer {
   position: relative;
   background: #1a293e; }
@@ -1304,7 +1364,8 @@ footer {
         font-size: .875em;
         padding-bottom: 16px; }
         footer .footer ul li a {
-          color: #c6c8ca; }
+          color: #c6c8ca;
+          font-weight: 300; }
   footer h5 {
     text-align: left;
     color: #c6c8ca;
@@ -1363,7 +1424,9 @@ footer {
     padding: 0; }
 
   .navbar-light .navbar-toggler-icon {
-    background-image: url(../img/togglers.svg); }
+    background-image: url(../img/togglers.svg);
+    font-size: 1em;
+    width: 1.2em; }
 
   .navbar .navbar-nav .nav-item a.nav-link {
     padding: 0; }
