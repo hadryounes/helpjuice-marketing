@@ -287,6 +287,7 @@ header {
     position: relative;
     display: block;
     margin: auto;
+    margin-top: 50px;
     height: 200px;
     width: 200px;
     border-radius: 999px;
@@ -299,6 +300,7 @@ header {
   .center-illustration {
     display: block;
     margin: auto;
+    margin-top: 50px;
     width: 100%;
     img {
       width: 100%
@@ -505,6 +507,9 @@ header {
 }
 
 @include media-breakpoint-down(sm) {
+  .join-us-input {
+    margin-bottom: 20px;
+  }
   .join-us {
     position: relative;
     padding-top: 40px;
@@ -517,6 +522,9 @@ header {
       input, button {
         border-radius: 100px;
         min-width: 360px;
+      }
+      input {
+        border-right: 1px !important;
       }
     }
   }

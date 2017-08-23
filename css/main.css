@@ -1182,6 +1182,7 @@ header {
     position: relative;
     display: block;
     margin: auto;
+    margin-top: 50px;
     height: 200px;
     width: 200px;
     border-radius: 999px;
@@ -1191,6 +1192,7 @@ header {
   .what-is-helpjuice .center-illustration {
     display: block;
     margin: auto;
+    margin-top: 50px;
     width: 100%; }
     .what-is-helpjuice .center-illustration img {
       width: 100%; }
@@ -1335,6 +1337,9 @@ header {
     text-transform: uppercase; }
 
 @media (max-width: 767px) {
+  .join-us-input {
+    margin-bottom: 20px; }
+
   .join-us {
     position: relative;
     padding-top: 40px;
@@ -1346,7 +1351,9 @@ header {
       margin-top: 30px; }
       .join-us .join-us-form input, .join-us .join-us-form button {
         border-radius: 100px;
-        min-width: 360px; } }
+        min-width: 360px; }
+      .join-us .join-us-form input {
+        border-right: 1px !important; } }
 footer {
   position: relative;
   background: #1a293e; }
