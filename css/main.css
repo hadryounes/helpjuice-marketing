@@ -1006,7 +1006,7 @@ p {
 
 hr {
   margin: 80px auto 100px;
-  border-color: #cbd6e1; }
+  border-color: rgba(203, 214, 225, 0.43); }
 
 @media (max-width: 767px) {
   hr {
@@ -1339,7 +1339,7 @@ header {
     position: relative;
     padding-top: 40px;
     padding-bottom: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     margin-top: 40px;
     min-height: 420px; }
     .join-us .join-us-form {
@@ -1354,8 +1354,9 @@ footer {
     position: relative;
     width: 100%;
     background: transparent;
-    height: 300px;
-    padding-top: 70px; }
+    min-height: 300px;
+    padding-top: 60px;
+    padding-bottom: 10px; }
     footer .footer ul {
       padding: 0;
       list-style: none;
@@ -1381,9 +1382,10 @@ footer {
       color: #c6c8ca; }
   footer .copyright {
     position: relative;
-    height: 80px;
+    min-height: 80px;
     width: 100%;
     padding-top: 30px;
+    padding-bottom: 30px;
     color: #c6c8ca;
     background: #18263a;
     font-size: .875em; }
@@ -1401,6 +1403,13 @@ footer {
       top: calc(50% - 8px);
       left: 5px; }
 
+@media (max-width: 767px) {
+  footer .copyright {
+    text-align: center; }
+    footer .copyright .phone, footer .copyright .email {
+      padding-top: 10px;
+      display: inline-block;
+      opacity: .7; } }
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0;
